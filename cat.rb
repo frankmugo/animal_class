@@ -1,8 +1,19 @@
 class Cat
-	attr_reader :name,:sound
+	attr_reader :name,:sound,:action,:info
 	def initialize(name)
 		@name = name
         @sound ="kwakwakwa"
-   end
-end   
+        @action = "lick"
+    end
+
+    def info
+    	@name +" say " + @sound + " when he " + @action 
+
+    end
+
+end      
+
+
+
+  
 

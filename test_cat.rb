@@ -11,6 +11,16 @@ class Testcat < Minitest::Test
 		animal = Cat.new("kiki")
 		assert_equal("kwakwakwa", animal.sound)
 	end
+
+	def test_return_cat_action
+		animal = Cat.new("mwas")
+		assert_equal("lick", animal.action)
+	end
+
+	def test_return_cat_info
+		animal = Cat.new("kiki")
+		assert_equal("kiki say kwakwakwa when he lick", animal.info)
+	end
      
 
 
